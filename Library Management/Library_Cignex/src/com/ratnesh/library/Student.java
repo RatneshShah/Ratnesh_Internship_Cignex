@@ -3,41 +3,41 @@ package com.ratnesh.library;
 
 public class Student {
 
-	private int id;
+	private String id;
 	private String name;
 	private String email;
 	private String bdate;
 	private String borrower_id;
 	private String department;
-	private String contactnumber;
+	private String contact_number;
 	private String pass;
 	
-	public Student(String name,String email,String bdate,String borrower_id,String department,String contactnumber,String Pass) {
+	public Student(String name,String bdate,String borrower_id,String department,String contact_number,String Pass,String email) {
 		this.name = name;
-		this.email = email;
 		this.bdate = bdate;
 		this.borrower_id=borrower_id;
 		this.department=department;
-		this.contactnumber=contactnumber;
+		this.contact_number=contact_number;
 		this.pass = Pass;
+		this.email = email;
 	}
 
-	public Student(int id, String name,String email,String bdate,String borrower_id,String department,String contactnumber,String pass) {
+	public Student(String id, String name,String bdate,String borrower_id,String department,String contact_number,String pass,String email) {
 		this.id = id;
-		this.name = name;
-		this.email = email;
+		this.name = name;	
 		this.bdate = bdate;
 		this.borrower_id=borrower_id;
 		this.department=department;
-		this.contactnumber=contactnumber;
+		this.contact_number=contact_number;
 		this.pass=pass;
+		this.email = email;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -84,12 +84,12 @@ public class Student {
 	}
 
 	public String getContactNumber() {
-		return contactnumber;
+		return contact_number;
 	}
 	
-	public void setContactNumber(String contactnumber)
+	public void setContactNumber(String contact_number)
 	{
-		this.contactnumber=contactnumber;
+		this.contact_number=contact_number;
 	}
 	
 	public String getPass() {
@@ -105,7 +105,7 @@ public class Student {
 	
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", email=" + email + ", bdate=" + bdate + ",borrower_id=" + borrower_id +",department=" + department +",contactnumber=" + contactnumber +"]";
+		return "Student [id=" + id + ", name=" + name + ", bdate=" + bdate + ", borrower_id=" + borrower_id +",department=" + department +",contact_number=" + contact_number +", pass=" + pass + ", email=" + email + "]";
 	}	
 }
 

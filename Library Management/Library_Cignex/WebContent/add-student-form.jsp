@@ -5,35 +5,55 @@
 	<title>Add Student</title>
 
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<link type="text/css" rel="stylesheet" href="css/add-student-style.css">	
-</head>
+	</head>
 
 <body>
 	<div id="wrapper">
 		<div id="header">
-			<h2>FooBar University</h2>
+			<h2>Library Managment System</h2>
 		</div>
 	</div>
 	
 	<div id="container">
 		<h3>Add Student</h3>
 		
-		<form action="BookUtilServlet" method="GET">
+		<form action="StudentControllerServlet" method="GET">
 		
 			<input type="hidden" name="command" value="ADD" />
 			
 			<table>
 				<tbody>
 					<tr>
-						<td><label>First name:</label></td>
-						<td><input type="text" name="firstName" /></td>
+						<td><label>Student Id:</label></td>
+						<td><input type="text" name="id" /></td>
 					</tr>
 
 					<tr>
-						<td><label>Last name:</label></td>
-						<td><input type="text" name="lastName" /></td>
+						<td><label>Name:</label></td>
+						<td><input type="text" name="name" /></td>
 					</tr>
-
+					<tr>
+						<td><label>Date of Birth:</label></td>
+						<td><input type="text" name="bdate" /></td>
+					</tr>
+					<tr>
+						<td><label>Borrower ID:</label></td>
+						<td><input type="text" name="borrower_id" /></td>
+					</tr>
+					<tr>
+						<td><label>Department:</label></td>
+						<td><input type="text" name="department" /></td>
+					</tr>
+					<tr>
+						<td><label>Contact Number: </label></td>
+						<td><input type="text" name="contact_number" /></td>
+					</tr>
+					<tr>
+						<td><label>Password:</label></td>
+						<td><input type="password" name="pass" /></td>
+					</tr>
+					
+					
 					<tr>
 						<td><label>Email:</label></td>
 						<td><input type="text" name="email" /></td>
